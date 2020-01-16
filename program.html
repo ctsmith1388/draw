@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <title>Draw</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+       <link rel="stylesheet" href="src/css/main.css">
+       <script type="text/javascript">
+       Function processData (c1,c2)  {
+           var cv1 = document.getElementById(c1).value;
+           var cv2 = document.getElementById(c2).value;
+
+       }
+       
+       </script>
+    </head>
+    <body>
+      <div class="wrapper">
+        <nav>
+          <ul>
+            <li><span id="trackX"></span></li>
+            <li><span id="trackY"></span></li>
+            <li><button id="btnRect">Rectangle</button></li>
+            <li><button id="btnLine">Line</button></li>
+            <li><button id="btnCircle">Circle</button></li>
+            <li><button id="btnPath">Path</button></li>
+            <li><button id="btnTriangle">Triangle</button></li>
+          </ul>
+        </nav>
+        <main></main>
+      </div>
+      <script src="src/js/main.js"></script>
+
+      <h2>Choose color 1: <input type="color1" name="color1" id="color1" />
+          Choose color 2: <input type="color2" name="color2" id= "color2"" />
+        <input type="button" onclick="processData('color1','color2')" value="submit" /> 
+    </h2>
+    </body>
+</html>

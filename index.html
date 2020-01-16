@@ -9,7 +9,21 @@
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
   </head>
   <body>
+
     <h1>HTML Starter</h1>
-    <script src="dist/js/main.js"></script>
-  </body>
+    <script src="dist/js/main.js">
+
+<canvas id="canvas" height="600px" width="800px"></canvas>
+      var canvas = document.getElementById('canvas');
+      var ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#' + Math.floor(Math.random()*16777215).toString(16);
+      ctx.fillRect(10, 10, 100, 100);
+      //Create a circle
+ctx.beginPath();
+ctx.arc(230, 400, 83, 0, 2 * Math.PI);
+ctx.stroke();
+    </script>
+            
+    
+</body>  
 </html>
